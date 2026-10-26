@@ -16,10 +16,10 @@ public class Main {
         Box box3 = box2;
         box3.length = 0;
 
-        double volume1 = box1.height * box1.width * box1.length;
+        double volume1 = box1.getVolume();
         System.out.println("Volume of Box1 is: " + volume1);
 
-        double volume2 = box2.height * box2.width * box2.length;
+        double volume2 = box2.getVolume();
         System.out.println("Volume of Box2 is: " + volume2);
 
         Human human1 = new Human("Petr", 40, 90.4);

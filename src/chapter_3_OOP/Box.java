@@ -6,4 +6,11 @@ public class Box {
     double width;
     double height;
 
+    public double getVolume() {
+        return length * width * height;
+    }
+
+    public void showVolume() {
+        System.out.println(getVolume());
+    }
 }
