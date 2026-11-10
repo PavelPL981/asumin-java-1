@@ -7,5 +7,8 @@ public class Main {
         rectangle.setSides(100, 80.5);
         double result = rectangle.calculateArea();
         System.out.println(result);
+
+        Employee employee = new Employee("Petr", "engineer", 500.56);
+        employee.showInfo();
     }
 }
