@@ -3,20 +3,22 @@ package chapter_3_OOP;
 public class Main {
 
     static void main() {
-        MyMath myMath = new MyMath();
-        System.out.println(MyMath.multiple(10, 2));
-        System.out.println(MyMath.multiple(10.5, 2.8));
-        System.out.println(MyMath.multiple(5));
+        Box current = new Box(10);
+        Box another = new Box(20);
 
-        double sqrt = Math.sqrt(36);
-        System.out.println(sqrt);
+        int compare = current.compare(another);
+        System.out.println(compare);
 
-        System.out.println(Math.min(10, 5));
+        Box box = new Box(current);
 
-        Monster monster = new Monster();
-        //monster.voice();
-        monster.voice(2);
-        monster.voice(3, "AAAA");
+        current.showVolume();
+        another.showVolume();
+        box.showVolume();
 
+        Box copy = box.copy();
+        copy.showVolume();
+
+        Box big = box.increase();
+        big.showVolume();
     }
 }
